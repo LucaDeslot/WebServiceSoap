@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ffdd08a-4880-4ed7-948f-89c54a0806e8" name="Changes" comment="First commit">
+    <list default="true" id="0ffdd08a-4880-4ed7-948f-89c54a0806e8" name="Changes" comment="Model implemented">
+      <change afterPath="$PROJECT_DIR$/src/main/java/infres/ws/client/WebServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/standalone/StandaloneServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/endpoint/RoomWebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/endpoint/RoomWebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/endpoint/RoomWebServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/endpoint/RoomWebServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,19 +55,78 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/home/dylan/Cours/EMA/S8/web_service/web-services-avances",
+    "last_opened_file_path": "D:/Projets/WebServiceSOAP/src/main/java/infres/ws/client/generated",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projets\WebServiceSOAP\src\main\java\infres\ws\client\generated" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projets\WebServiceSOAP\src\main\java\infres\ws\client\generated" />
+      <recent name="D:\Projets\WebServiceSOAP\src\main\java\infres\ws\client\generated-src" />
+      <recent name="D:\Projets\WebServiceSOAP\target" />
       <recent name="D:\Projets\WebServiceSOAP" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.WebServiceClient">
+    <configuration name="StandaloneServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="infres.ws.soap.standalone.StandaloneServer" />
+      <module name="java-soap-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="infres.ws.soap.standalone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="infres.ws.client.WebServiceClient" />
+      <module name="java-soap-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="infres.ws.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="WebServiceSOAP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="WebServiceSOAP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WebServiceClient" />
+        <item itemvalue="Application.StandaloneServer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,7 +137,10 @@
       <option name="presentableId" value="Default" />
       <updated>1687165689323</updated>
       <workItem from="1687165690882" duration="4000" />
-      <workItem from="1687166221774" duration="1797000" />
+      <workItem from="1687166221774" duration="2500000" />
+      <workItem from="1687168744150" duration="1329000" />
+      <workItem from="1687175666800" duration="3084000" />
+      <workItem from="1687179845140" duration="1638000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1687166422765</created>
@@ -90,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687167420696</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Model implemented">
+      <created>1687168088492</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687168088492</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +185,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Model implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model implemented" />
   </component>
 </project>
