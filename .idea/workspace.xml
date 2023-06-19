@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ffdd08a-4880-4ed7-948f-89c54a0806e8" name="Changes" comment="First commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/model/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687165689323</updated>
       <workItem from="1687165690882" duration="4000" />
-      <workItem from="1687166221774" duration="826000" />
+      <workItem from="1687166221774" duration="1797000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1687166422765</created>
@@ -75,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687166422765</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First commit">
+      <created>1687167420696</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687167420696</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
