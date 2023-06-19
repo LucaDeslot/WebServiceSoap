@@ -46,4 +46,16 @@ public class ReservationService {
         return reservation;
     }
 
+    public boolean checkAvailability(Date StartDate, Date EndDate, int idRoom) throws Exception {
+        Room room = getRoom(idRoom);
+        for (Reservation reservation : reservations) {
+            if (reservation.getRoom().equals(room)) {
+                if (reservation.getStartDate().before(EndDate) && reservation.getEndDate().after(StartDate)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
 }
