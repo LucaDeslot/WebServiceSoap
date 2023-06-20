@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class RoomService {
-    private final Room[] rooms = new Room[10];
+    private final Room[] rooms = new Room[3];
     public RoomService() {
         // Créer des chambres et les ajouter à la liste
         Room basicRoom = new Room();
