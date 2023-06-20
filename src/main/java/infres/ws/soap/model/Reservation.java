@@ -1,11 +1,13 @@
 package infres.ws.soap.model;
 
 import java.util.Date;
+import java.util.Map;
 
 public class Reservation {
 
     private int id; // Un identifiant unique pour la réservation
-    private Room room; // La chambre réservée
+    private int roomId; // La chambre réservée
+    private Hotel hotel; // L'hôtel dans lequel la chambre est réservée
     private Date startDate; // La date de début de la réservation
     private Date endDate; // La date de fin de la réservation
     private String customerName; // Le nom du client qui a fait la réservation
@@ -18,15 +20,6 @@ public class Reservation {
     public void setId(int id) {
         this.id = id;
     }
-
-    public Room getRoom() {
-        return room;
-    }
-
-    public void setRoom(Room room) {
-        this.room = room;
-    }
-
     public Date getStartDate() {
         return startDate;
     }
@@ -51,4 +44,19 @@ public class Reservation {
         this.customerName = customerName;
     }
 
+    public int getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(int roomId) {
+        this.roomId = roomId;
+    }
+
+    public Hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
+    }
 }
