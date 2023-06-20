@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ffdd08a-4880-4ed7-948f-89c54a0806e8" name="Changes" comment="Model implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/infres/ws/client/WebServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/standalone/StandaloneServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="0ffdd08a-4880-4ed7-948f-89c54a0806e8" name="Changes" comment="Add reservation generated services">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/endpoint/RoomWebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/endpoint/RoomWebService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/soap/endpoint/RoomWebServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infres/ws/soap/endpoint/RoomWebServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/ObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/ObjectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/Reservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/Reservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/ReservationWebService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/ReservationWebService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/ReservationWebServiceImplService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/ReservationWebServiceImplService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/RoomArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/RoomArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/RoomWebService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/RoomWebService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/RoomWebServiceImplService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/RoomWebServiceImplService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infres/ws/client/generated/package-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -48,23 +61,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Projets/WebServiceSOAP/src/main/java/infres/ws/client/generated",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projets/WebServiceSOAP/src/main/java/infres/ws/client/generated&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projets\WebServiceSOAP\src\main\java\infres\ws\client\generated" />
@@ -75,13 +94,19 @@
       <recent name="D:\Projets\WebServiceSOAP\target" />
       <recent name="D:\Projets\WebServiceSOAP" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="infres.ws.soap.service" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebServiceClient">
+  <component name="RunManager" selected="Application.StandaloneServer">
     <configuration name="StandaloneServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="infres.ws.soap.standalone.StandaloneServer" />
       <module name="java-soap-server" />
@@ -108,6 +133,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReservationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-soap-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="infres.ws.soap.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="infres.ws.soap.service" />
+      <option name="MAIN_CLASS_NAME" value="infres.ws.soap.service.ReservationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="WebServiceSOAP" />
       <method v="2">
@@ -123,8 +163,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WebServiceClient" />
         <item itemvalue="Application.StandaloneServer" />
+        <item itemvalue="Application.WebServiceClient" />
+        <item itemvalue="JUnit.ReservationServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +181,9 @@
       <workItem from="1687166221774" duration="2500000" />
       <workItem from="1687168744150" duration="1329000" />
       <workItem from="1687175666800" duration="3084000" />
-      <workItem from="1687179845140" duration="1638000" />
+      <workItem from="1687179845140" duration="6828000" />
+      <workItem from="1687252109888" duration="43000" />
+      <workItem from="1687263893873" duration="212000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1687166422765</created>
@@ -163,7 +206,35 @@
       <option name="project" value="LOCAL" />
       <updated>1687168088492</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="avancement">
+      <created>1687181541030</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687181541030</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added generated">
+      <created>1687182898964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687182898964</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add some shit to services">
+      <created>1687186938405</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687186938405</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add reservation generated services">
+      <created>1687252146297</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687252146297</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +257,10 @@
     </ignored-roots>
     <MESSAGE value="First commit" />
     <MESSAGE value="Model implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model implemented" />
+    <MESSAGE value="avancement" />
+    <MESSAGE value="added generated" />
+    <MESSAGE value="add some shit to services" />
+    <MESSAGE value="Add reservation generated services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add reservation generated services" />
   </component>
 </project>

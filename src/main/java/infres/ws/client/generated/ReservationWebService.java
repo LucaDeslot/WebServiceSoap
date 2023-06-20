@@ -43,25 +43,6 @@ public interface ReservationWebService {
      * @param arg0
      * @param arg1
      * @param arg2
-     * @return
-     *     returns boolean
-     */
-    @WebMethod
-    @WebResult(partName = "return")
-    @Action(input = "http://endpoint.soap.ws.infres/ReservationWebService/checkAvailabilityRequest", output = "http://endpoint.soap.ws.infres/ReservationWebService/checkAvailabilityResponse")
-    public boolean checkAvailability(
-        @WebParam(name = "arg0", partName = "arg0")
-        XMLGregorianCalendar arg0,
-        @WebParam(name = "arg1", partName = "arg1")
-        XMLGregorianCalendar arg1,
-        @WebParam(name = "arg2", partName = "arg2")
-        int arg2);
-
-    /**
-     * 
-     * @param arg0
-     * @param arg1
-     * @param arg2
      * @param arg3
      * @return
      *     returns infres.ws.soap.endpoint.Reservation
@@ -78,5 +59,24 @@ public interface ReservationWebService {
         int arg2,
         @WebParam(name = "arg3", partName = "arg3")
         String arg3);
+
+    /**
+     * 
+     * @param arg0
+     * @param arg1
+     * @param arg2
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(partName = "return")
+    @Action(input = "http://endpoint.soap.ws.infres/ReservationWebService/checkAvailabilityRequest", output = "http://endpoint.soap.ws.infres/ReservationWebService/checkAvailabilityResponse")
+    public boolean checkAvailability(
+        @WebParam(name = "arg0", partName = "arg0")
+        XMLGregorianCalendar arg0,
+        @WebParam(name = "arg1", partName = "arg1")
+        XMLGregorianCalendar arg1,
+        @WebParam(name = "arg2", partName = "arg2")
+        int arg2);
 
 }
