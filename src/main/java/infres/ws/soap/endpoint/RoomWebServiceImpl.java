@@ -18,7 +18,7 @@ public class RoomWebServiceImpl implements RoomWebService {
             throw new RuntimeException(e);
         }
     }
-    public ArrayList<Room> getRooms() {
+    public Room[] getRooms() {
         try {
             return roomService.getRooms();
         } catch (Exception e) {

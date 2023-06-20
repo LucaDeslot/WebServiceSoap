@@ -19,5 +19,5 @@ public interface RoomWebService {
     @WebMethod
     Room[] getAllRooms();
     @WebMethod
-    ArrayList<Room> getRooms();
+    Room[] getRooms();
 }
