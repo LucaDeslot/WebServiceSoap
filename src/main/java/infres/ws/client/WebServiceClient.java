@@ -30,8 +30,8 @@ public class WebServiceClient {
             DatatypeFactory datatypeFactory = DatatypeFactory.newInstance();
             XMLGregorianCalendar xmlGregorianCalendar = datatypeFactory.newXMLGregorianCalendar(gregorianCalendar);
 
-            Room room2 = port2.createReservation(xmlGregorianCalendar, xmlGregorianCalendar, 1, "John Doe"); // Invoke the web service method
-            System.out.println(room2.getRoomNumber());
+            //Room room2 = port2.createReservation(xmlGregorianCalendar, xmlGregorianCalendar, 1, "John Doe"); // Invoke the web service method
+            //System.out.println(room2.getRoomNumber());
         } catch (Exception ex) {
             ex.printStackTrace();
         }

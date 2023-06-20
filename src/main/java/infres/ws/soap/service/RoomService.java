@@ -6,8 +6,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RoomService {
-    static List<Room> rooms = new ArrayList<Room>();
-    public static Room getRoom(Integer roomId) throws Exception {
+    private List<Room> rooms = new ArrayList<Room>();
+    public RoomService() {
+        // Créer des chambres et les ajouter à la liste
+        Room basicRoom = new Room();
+        basicRoom.setRoomNumber(1);
+        basicRoom.setType("Basique");
+        basicRoom.setPrice(50.0);
+        rooms.add(basicRoom);
+
+        Room middleRoom = new Room();
+        middleRoom.setRoomNumber(2);
+        middleRoom.setType("Middle Gamme");
+        middleRoom.setPrice(100.0);
+        rooms.add(middleRoom);
+
+        Room highEndRoom = new Room();
+        highEndRoom.setRoomNumber(3);
+        highEndRoom.setType("Haut de Gamme");
+        highEndRoom.setPrice(200.0);
+        rooms.add(highEndRoom);
+    }
+    public Room getRoom(Integer roomId) throws Exception {
         return rooms.stream()
                 .filter(room -> room.getRoomNumber() == roomId)
                 .findFirst()
@@ -16,5 +36,4 @@ public class RoomService {
     public List<Room> getAllRoom(){
         return rooms;
     }
-
 }
