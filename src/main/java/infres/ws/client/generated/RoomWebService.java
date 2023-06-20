@@ -26,16 +26,13 @@ public interface RoomWebService {
 
     /**
      * 
-     * @param arg0
      * @return
-     *     returns infres.ws.soap.endpoint.Room
+     *     returns infres.ws.soap.endpoint.RoomArray
      */
     @WebMethod
     @WebResult(partName = "return")
-    @Action(input = "http://endpoint.soap.ws.infres/RoomWebService/getRoomRequest", output = "http://endpoint.soap.ws.infres/RoomWebService/getRoomResponse")
-    public Room getRoom(
-        @WebParam(name = "arg0", partName = "arg0")
-        int arg0);
+    @Action(input = "http://endpoint.soap.ws.infres/RoomWebService/getRoomsRequest", output = "http://endpoint.soap.ws.infres/RoomWebService/getRoomsResponse")
+    public RoomArray getRooms();
 
     /**
      * 
@@ -49,12 +46,15 @@ public interface RoomWebService {
 
     /**
      * 
+     * @param arg0
      * @return
-     *     returns infres.ws.soap.endpoint.ArrayList
+     *     returns infres.ws.soap.endpoint.Room
      */
     @WebMethod
     @WebResult(partName = "return")
-    @Action(input = "http://endpoint.soap.ws.infres/RoomWebService/getRoomsRequest", output = "http://endpoint.soap.ws.infres/RoomWebService/getRoomsResponse")
-    public ArrayList getRooms();
+    @Action(input = "http://endpoint.soap.ws.infres/RoomWebService/getRoomRequest", output = "http://endpoint.soap.ws.infres/RoomWebService/getRoomResponse")
+    public Room getRoom(
+        @WebParam(name = "arg0", partName = "arg0")
+        int arg0);
 
 }
