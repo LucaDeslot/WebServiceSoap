@@ -90,5 +90,29 @@ public class ReservationService {
         }
         return true;
     }
+    public Reservation makeReservation(Date StartDate, Date EndDate, String customerName, int idRoom) throws Exception {
+        if (checkAvailability(StartDate, EndDate, idRoom)) {
+            hotels[0].getRoomsStatus().put(getRoom(idRoom), true);
+            Reservation reservation = new Reservation();
+            reservation.setId(reservationIndex);
+            reservation.setStartDate(StartDate);
+            reservation.setEndDate(EndDate);
+            reservation.setCustomerName(customerName);
+            reservation.setRoomId(idRoom);
+            reservation.setHotel(hotels[0]);
+            reservations[reservationIndex] = reservation;
+            reservationIndex++;
+            return reservation;
+        }
+        else {
+            throw new Exception("Room not available");
+        }
+    }
+    public Reservation getReservationByRoom(int roomId) {
+        return Arrays.stream(this.reservations)
+                .filter(reservation -> reservation.getRoomId() == roomId)
+                .findFirst()
+                .orElse(null);
+    }
 
 }
