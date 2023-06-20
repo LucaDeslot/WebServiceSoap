@@ -40,13 +40,23 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Reservation }
+     * Create an instance of {@link ArrayList }
      * 
      * @return
-     *     the new instance of {@link Reservation }
+     *     the new instance of {@link ArrayList }
      */
-    public Reservation createReservation() {
-        return new Reservation();
+    public ArrayList createArrayList() {
+        return new ArrayList();
+    }
+
+    /**
+     * Create an instance of {@link RoomArray }
+     * 
+     * @return
+     *     the new instance of {@link RoomArray }
+     */
+    public RoomArray createRoomArray() {
+        return new RoomArray();
     }
 
 }
