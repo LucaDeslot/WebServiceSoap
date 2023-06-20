@@ -1,13 +1,13 @@
 package infres.ws.soap.model;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class Hotel {
-
     private int id;
     private String name;
-    private String adress;
-    private ArrayList<Room> rooms;
+    private String address;
+    private Map<Room,Boolean> roomsStatus;
 
     public int getId() {
         return id;
@@ -25,19 +25,19 @@ public class Hotel {
         this.name = name;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public ArrayList<Room> getRooms() {
-        return rooms;
+    public Map<Room, Boolean> getRoomsStatus() {
+        return roomsStatus;
     }
 
-    public void setRooms(ArrayList<Room> rooms) {
-        this.rooms = rooms;
+        public void setRoomsStatus(Map<Room, Boolean> roomsStatus) {
+        this.roomsStatus = roomsStatus;
     }
 }
