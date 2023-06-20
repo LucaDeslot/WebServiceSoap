@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RoomService {
-    private List<Room> rooms = new ArrayList<Room>();
+    private ArrayList<Room> rooms = new ArrayList<>();
     public RoomService() {
         // Créer des chambres et les ajouter à la liste
         Room basicRoom = new Room();
@@ -33,7 +33,7 @@ public class RoomService {
                 .findFirst()
                 .orElseThrow(() -> new Exception("Room not found"));
     }
-    public List<Room> getAllRoom(){
+    public ArrayList<Room> getRooms(){
         return rooms;
     }
 }

@@ -6,6 +6,9 @@ import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 import jakarta.jws.soap.SOAPBinding;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @WebService
 @SOAPBinding(style = SOAPBinding.Style.RPC)
 public interface RoomWebService {
@@ -15,5 +18,6 @@ public interface RoomWebService {
 
     @WebMethod
     Room[] getAllRooms();
-
+    @WebMethod
+    ArrayList<Room> getRooms();
 }
